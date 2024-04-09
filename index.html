@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link>
+<link rel="stylesheet" href="myStyle.css">
+<script src="myscript.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arthur Briscoe" >
     <title>Document</title>
+    <button id="thesecondbutton">A second button</button>
+<p id="secondtest">This is some text/a test for a second button</p>
+<a id="myButton">
+    <button>Go to page 3</button>
+    <a href="page3.html">
+        <button>Go to Page 3</button>
+      </a>
+  </a>
 </head>
 <body>
     
+<h5> Hobbies/ interests</h5>
+<p id="hobbiesText"> - Feel free to add your own hobby list here as I have mine listed as an example. <p>
+    - I enjoy going to the gym on a regular basis and plan on taking it far.
+<p>   <strong>The gym has helped me to get out of dark places mentally and gave me a reason to not just drop and give up.</strong></p>
+<p> - I like to socialize with my friends late at night just talking about life and what it could be or what we make
+      it out to be. <strong>It's hard to describe the feeling of comfortability when i'm around my homies.</strong> 
+      It's like all of my problems just disappear when i'm around them. I also get this feeling when i'm in the gym.
+</p>
+
+<h3> Life time Goals</h3>
+<p><strong> - Retiring my parents. </strong></p>
+<p><strong> - Watching my brother and sister grow up to be the people they want to be and become successful. </strong></p>
+<p><strong> - Being financially stable so money is never a problem for my future family and future self. </strong></p>
+<p><strong> - Watch the boys cook up on their dreams. </strong></p>
+<p><strong> - Be more in synchronization with my inner child. </strong></p>
+<p><strong> - Forgive those who did me wrong.</strong></p>
+<p><strong> - Become god's bestfriend </strong></p>
+
+<label for="userInput">Enter your hobby:</label>
+<input type="text" id="userInput">
+<button onclick="addHobby()">Add Hobby</button>
+
+<script>
+function addHobby() {
+  const userInput = document.getElementById("userInput").value;
+  const hobbiesText = document.getElementById("hobbiesText");
+  hobbiesText.innerHTML += `<p> - ${userInput}</p>`;
+}
+</script>
+
+<a href="page2.html" >page 2</a>
+
 </body>
 </html>
